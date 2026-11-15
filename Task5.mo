@@ -3,8 +3,7 @@ model FurutaPendulum "Furuta pendulum"
     parameter Real pendulumA_start = 0.01;
     
     model ControllerLQR
-      parameter Real K[6] = {0.01, 0.01247043, 3.97605436, 0.27661223, -2.58822187, -0.11572922};
-      Modelica.Blocks.Interfaces.RealInput phi, dphi, theta1, dtheta1, theta2, dtheta2;
+      parameter Real K[6] = {0.31622777, 0.39301203, 118.65434041, 8.25666798, -74.92527186, -3.3522667};
       Modelica.Blocks.Interfaces.RealOutput u(start=0);
       Real x[6];
     equation
